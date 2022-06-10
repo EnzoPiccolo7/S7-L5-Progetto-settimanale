@@ -1,0 +1,9 @@
+.contain {
+    display: flex;
+}
+.card {
+    margin-left: 2rem;
+}
+.card-body {
+    text-align: center;
+}

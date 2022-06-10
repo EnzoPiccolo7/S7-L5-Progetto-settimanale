@@ -4,7 +4,7 @@
     "firstName": "John",
     "lastName": "Doe",
     "gender": "Male",
-    "profileURL": "img/male.png",
+    "profileURL": "../img/uomo.jpg",
     "email": "john.doe@example.com"
   },
   {
@@ -12,7 +12,7 @@
     "firstName": "Jane",
     "lastName": "Doe",
     "gender": "Female",
-    "profileURL": "img/female.png",
+    "profileURL": "../img/donna.jpg",
     "email": "jane.doe@example.com"
   }
 ]
