@@ -25,3 +25,16 @@ h1 {
     display: flex;
     justify-content: space-evenly;
 }
+h5 {
+    text-align: center;
+}
+.card-body {
+    visibility: hidden;
+    height: 3rem;
+}
+.on {
+    transition:  ease-in;
+    height: 11rem;
+    visibility: visible;
+
+}

@@ -1,8 +1,4 @@
 
-    let img = document.querySelector('.btn');
-    img.addEventListener('click',esce);
-
-function esce(){
 let chiamata = fetch('../json/users.json').then(response => response.json()); 
 console.log(chiamata);
 
@@ -11,10 +7,10 @@ console.log(chiamata);
         data.forEach(ele => {
             let li = document.createElement('div');
             li.innerHTML =` 
-
-                    <div class="card" style="width: 18rem;">
+                
+                    <div id=${ele.username} class="card" style="width: 18rem;">
                     <img src="${ele.profileURL}" class="card-img-top"></img>
-                    <div id="card" class="card-body">
+                    <div id=${ele.username}-card class="card-body">
                         <h5 class="card-title">${ele.username}</h5>
                         <p class="class-text">${ele.firstName} ${ele.lastName}</p>
                         <p class="class-text">Gender: ${ele.gender}</p>
@@ -25,13 +21,28 @@ console.log(chiamata);
             `;
             
             utenti.appendChild(li);
+            let img = document.querySelector('#'+ ele.username);
+            img.addEventListener('click',function(){
+                esce(ele.username);         
+            
+            });
             
         })
 
-    })  
-}
-/* img.addEventListener('dbclick',esce); */
+})  
+/* const tempi = setTimeout(tempo,4000);
+ */
+/* function tempo(){
+ */     /* let img = document.querySelector('#john');
+    img.addEventListener('click',esce); */
+     
+    function esce(username) {
+        let testo = document.querySelector('#'+username + '-card');
 
+        testo.classList.toggle('on');
+    
+    } 
+/* } */
 
  
 
