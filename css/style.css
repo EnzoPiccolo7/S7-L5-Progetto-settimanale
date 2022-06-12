@@ -1,9 +1,27 @@
-.contain {
-    display: flex;
+html {
+    background-color: aquamarine;
+}
+body {
+    background-color: aquamarine;
+}
+.btn {
+    margin-left: 33rem;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
 }
 .card {
     margin-left: 2rem;
+    border-radius: 10%;
+box-shadow: 5px 6px 7px blanchedalmond;
 }
 .card-body {
     text-align: center;
+}
+h1 {
+    margin: 2rem 0rem;
+    text-align: center;
+}
+.cont {
+    display: flex;
+    justify-content: space-evenly;
 }
