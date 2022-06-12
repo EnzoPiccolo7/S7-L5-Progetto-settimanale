@@ -10,8 +10,9 @@ console.log(chiamata);
                 
                     <div id=${ele.username} class="card" style="width: 18rem;">
                     <img src="${ele.profileURL}" class="card-img-top"></img>
+                    <h5 class="card-title">${ele.username}</h5>
                     <div id=${ele.username}-card class="card-body">
-                        <h5 class="card-title">${ele.username}</h5>
+                        
                         <p class="class-text">${ele.firstName} ${ele.lastName}</p>
                         <p class="class-text">Gender: ${ele.gender}</p>
                         <p class="class-text">Email: ${ele.email}</p>
@@ -30,19 +31,13 @@ console.log(chiamata);
         })
 
 })  
-/* const tempi = setTimeout(tempo,4000);
- */
-/* function tempo(){
- */     /* let img = document.querySelector('#john');
-    img.addEventListener('click',esce); */
-     
+  
     function esce(username) {
         let testo = document.querySelector('#'+username + '-card');
 
         testo.classList.toggle('on');
     
     } 
-/* } */
 
  
 
